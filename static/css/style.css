@@ -1,0 +1,21 @@
+body {
+  background-color: #006A4E;
+}
+.container {
+  background-color: white;
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/banner.jpg");
+  padding: 100px 0px 100px;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;  
+}
+.banner-text {
+  text-align: center;
+  color: white;
+}

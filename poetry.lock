@@ -1,4 +1,24 @@
 [[package]]
+name = "apesmit-python2"
+version = "0.1"
+description = "simple Python module to create XML sitemaps"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "beautifulsoup4"
+version = "4.4.1"
+description = "Screen-scraping library"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+html5lib = ["html5lib"]
+lxml = ["lxml"]
+
+[[package]]
 name = "blinker"
 version = "1.6.2"
 description = "Fast, simple object-to-object and broadcast signaling"
@@ -45,6 +65,56 @@ async = ["asgiref (>=3.2)"]
 dotenv = ["python-dotenv"]
 
 [[package]]
+name = "flask-login"
+version = "0.6.2"
+description = "User authentication and session management for Flask."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+Flask = ">=1.0.4"
+Werkzeug = ">=1.0.1"
+
+[[package]]
+name = "flask-wtf"
+version = "1.1.1"
+description = "Form rendering, validation, and CSRF protection for Flask with WTForms."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+Flask = "*"
+itsdangerous = "*"
+WTForms = "*"
+
+[package.extras]
+email = ["email-validator"]
+
+[[package]]
+name = "html5lib"
+version = "1.0b8"
+description = "HTML parser based on the WHATWG HTML specification"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+six = "*"
+
+[[package]]
+name = "html5lib-truncation"
+version = "0.1.0"
+description = "Truncating HTML with html5lib filter"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+html5lib = "*"
+
+[[package]]
 name = "itsdangerous"
 version = "2.1.2"
 description = "Safely pass data to untrusted environments and back."
@@ -75,6 +145,53 @@ optional = false
 python-versions = ">=3.7"
 
 [[package]]
+name = "python-slugify"
+version = "8.0.1"
+description = "A Python slugify application that also handles Unicode"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+text-unidecode = ">=1.3"
+
+[package.extras]
+unidecode = ["Unidecode (>=1.1.1)"]
+
+[[package]]
+name = "redberry"
+version = "0.0.7.15"
+description = "Flask Blueprint for adding simple CMS functionality"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+apesmit-python2 = "0.1"
+beautifulsoup4 = "4.4.1"
+flask = ">=0.11.1"
+flask-wtf = ">=0.13.1"
+html5lib = "1.0b8"
+html5lib-truncation = "0.1.0"
+python-slugify = ">=1.2.1"
+
+[[package]]
+name = "six"
+version = "1.16.0"
+description = "Python 2 and 3 compatibility utilities"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[[package]]
+name = "text-unidecode"
+version = "1.3"
+description = "The most basic Text::Unidecode port"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "werkzeug"
 version = "2.3.2"
 description = "The comprehensive WSGI web application library."
@@ -88,17 +205,42 @@ MarkupSafe = ">=2.1.1"
 [package.extras]
 watchdog = ["watchdog (>=2.3)"]
 
+[[package]]
+name = "wtforms"
+version = "3.0.1"
+description = "Form validation and rendering for Python web development."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+MarkupSafe = "*"
+
+[package.extras]
+email = ["email-validator"]
+
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "f7b3bc579c73b29ae2b9006d876ee097318f8a0758050e870981b3a6d810b880"
+content-hash = "69e6a6157fbc87ea9dfc114163af3df9ef6bc46e4983980865b7a4fa0f10a576"
 
 [metadata.files]
+apesmit-python2 = []
+beautifulsoup4 = []
 blinker = []
 click = []
 colorama = []
 flask = []
+flask-login = []
+flask-wtf = []
+html5lib = []
+html5lib-truncation = []
 itsdangerous = []
 jinja2 = []
 markupsafe = []
+python-slugify = []
+redberry = []
+six = []
+text-unidecode = []
 werkzeug = []
+wtforms = []
